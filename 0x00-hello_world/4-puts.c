@@ -1,9 +1,9 @@
 /* printing a c programme with puts */
 #include <stdio.h>
-main ()
+int main ()
 { 
 	char x; 
-	x="Programming is like building a multilingual puzzle";
-	puts(x, stdout);
+	x = "Programming is like building a multilingual puzzle";
+	puts(x);
 	return 0;
 }
