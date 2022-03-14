@@ -1,17 +1,17 @@
 #include <stdio.h>
 int main(void)
 {
-	char charType;
-	int intType;
-	long int longintType;
-	long long int lonlongintType;
-	float floatType;
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
-		printf("size of a char: %d byte(s)\n", (int)sizeof(charType));
-		printf("size of an int: %d byte(s)\n", (int)sizeof(intType));
-		printf("size of a long int: %d byte(s)\n", (int)sizeof(longintType));
-		printf("size of a long long int: %d byte(s)\n", (int)sizeof(longlongintType));
-		printf("size of a float: %d byte(s)\n", (int)sizeof(floatType));
+		printf("size of a char: %d byte(s)\n", (int)sizeof(a));
+		printf("size of an int: %d byte(s)\n", (int)sizeof(b));
+		printf("size of a long int: %d byte(s)\n", (int)sizeof(c));
+		printf("size of a long long int: %d byte(s)\n", (int)sizeof(d));
+		printf("size of a float: %d byte(s)\n", (int)sizeof(e));
 		return (0);
 }
 	
