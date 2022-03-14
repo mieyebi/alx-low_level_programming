@@ -1,4 +1,6 @@
-#include <stdio.h>
+/**
+* printing the size of the various types 
+*/#include <stdio.h>
 #include <stdlib.h>
  
 int main(void)
