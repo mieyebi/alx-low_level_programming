@@ -1,13 +1,10 @@
-/**
-* printing the size of the various type*/
-/**
-* main - executes the void function
-*
-* return: 0 if
-*/
 #include <stdio.h>
 #include <stdlib.h>
- 
+/**
+ * main - does main
+ *
+ * Return: 0 if
+ */
 int main(void)
 {
 	char c;
