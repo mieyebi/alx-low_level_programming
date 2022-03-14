@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stderr.h>
 int main(void)
 {
 	char a;
