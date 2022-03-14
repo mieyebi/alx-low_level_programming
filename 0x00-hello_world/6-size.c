@@ -1,6 +1,11 @@
 /**
-* printing the size of the various types 
-*/#include <stdio.h>
+* printing the size of the various type*/
+/**
+* main - executes the void function
+*
+* return: 0 if
+*/
+#include <stdio.h>
 #include <stdlib.h>
  
 int main(void)
