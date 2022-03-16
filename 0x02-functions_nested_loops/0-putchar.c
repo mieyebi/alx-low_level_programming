@@ -1,10 +1,7 @@
 /**
-*_putchar - prints to a stdout
-*
-*main - performs the putchar function
-*
-*return: 0 on success
-*
+*_putchar-prints to a stdout
+*main-performs the putchar function
+*return:0 on success
 */
 #include <stdio.h>
 #include "main.h"
