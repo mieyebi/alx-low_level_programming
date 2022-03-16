@@ -11,7 +11,7 @@
 
 int main(void)
 
-	char 1 = '_';
+{	char 1 = _;
 	char 2 = p;
 	char 3 = u;
 	char 4 = t;
@@ -19,7 +19,8 @@ int main(void)
 	char 6 = h;
 	char 7 = a;
 	char 8 = r;
-{	/* write the character to a stdout*/
+	
+/* write the character to a stdout*/
 
 		_putchar(1);
 		_putchar(2);
