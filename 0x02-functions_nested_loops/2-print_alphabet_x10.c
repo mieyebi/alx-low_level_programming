@@ -8,8 +8,8 @@
 * return void on success*/
 
 void print_alphabet_x10(void)
+int az = 0
 {
-int az = 0;
 	while (az <= 10);
 	{
 	int am = 'a';
