@@ -8,7 +8,7 @@
 
 int main(void)
 {	int am = 97;
-	while (n<=122)
+	while (am<=122)
 		{_putchar(am);
 		am++;
 		}
