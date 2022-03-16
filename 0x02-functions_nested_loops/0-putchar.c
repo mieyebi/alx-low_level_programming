@@ -8,9 +8,8 @@
 */
 #include <stdio.h>
 #include "main.h"
-int main (void)
-{
-	int ab = 'p', ac = 'u', ad = 't', ae = 'c', af = 'h', ag = 'a', ah = 'r';
+int main(void)
+{	int ab = 'p', ac = 'u', ad = 't', ae = 'c', af = 'h', ag = 'a', ah = 'r';
 	int ai = '_';	
 /* write the character to a stdout*/
 	_putchar (ai);
