@@ -11,14 +11,27 @@
 
 int main(void)
 
-{	int ch = '112 1167 116 099 104 97 114'
-	int ab = '_' 
+{	int ab = '112'
+	int ac = '117'
+	int ad = '116'
+	int ae = '099'
+	int af = '104'
+	int ag = '97'
+	int ah = '114'
+	int ai = '_' 
 	
 /* write the character to a stdout*/
 
+		_putchar(ai);
 		_putchar(ab);
-		_putchar(ch);
-		_putchar("/n");
+		_putchar(ac);
+                _putchar(ad);
+		_putchar(ae);
+                _putchar(af);
+                _putchar(ag);
+                _putchar(ai);
+
+		_putchar('/n');
 		
 		return(0);
 }
