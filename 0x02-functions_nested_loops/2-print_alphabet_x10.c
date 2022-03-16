@@ -7,7 +7,7 @@
 */
 
 void print_alphabet_x10(void)
-{	int am = 'a', 10;
+	int am = 'a', 10;
 	while (am <= 10)
 		{	while (am <= 'z')
 			{	_putchar(am);
@@ -15,4 +15,4 @@ void print_alphabet_x10(void)
 			}
 	_putchar('\n');
 	}
-}
+
