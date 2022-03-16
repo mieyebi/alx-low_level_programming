@@ -1,9 +1,9 @@
 /**
-* _putchar - prints to a stdout
+*_putchar - prints to a stdout
 *
-* main - performs the putchar function
+*main - performs the putchar function
 *
-* return: 0 on success
+*return: 0 on success
 *
 */
 #include <stdio.h>
