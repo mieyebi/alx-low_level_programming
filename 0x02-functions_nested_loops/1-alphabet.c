@@ -1,12 +1,16 @@
 #include <stdio.h>
-#include "main.h'"
+#include "main.h"
 
-/** 
-* main -check the code 
+/**
+* main -check the code
 * return: 0 on success
-
 */
 
 int main(void)
-{ 
-_putchar prin
+{	int am = 97;
+	while (n<=122)
+		{_putchar(am);
+		am++;
+		}
+return (0);
+}
