@@ -3,11 +3,12 @@
 
 /**
 * main -check the code
-* return: 0 on success
+* Return: void on success
 */
 
 void print_alphabet(void)
-{	int am = 'a';
+{	int am;
+	am = 'a';
 	while (am <= 'z')
 		{_putchar(am);
 		am++;
