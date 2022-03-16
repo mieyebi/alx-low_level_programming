@@ -10,9 +10,8 @@
 
 int main(void)
 
-	void putchar (int char)
-{		char a = '_putchar;'
-/* write the character to a stdout*/
+	char a = _putchar;
+{	/* write the character to a stdout*/
 
 		putchar(a);
 		putchar("/n")
