@@ -6,11 +6,11 @@
 * return: 0 on success
 */
 
-int main(void)
-{	int am = 97;
-	while (am<=122)
+void print_alphabet(void)
+{	int am = 'a';
+	while (am <= 'z')
 		{_putchar(am);
 		am++;
 		}
-return (0);
+_putchar('\n');
 }
