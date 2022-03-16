@@ -6,6 +6,7 @@
 * return: 0 on success
 *
 */
+#include <stdout>
 #include <main.h>
 
 int main(void)
