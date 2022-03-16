@@ -11,7 +11,7 @@
 
 int main(void)
 
-{	int ab = '112', ac = '117', ad = '116', ae = '99', af = '104', ag = '97', ah = '114';
+{	int ab = 'p', ac = 'u', ad = 't', ae = 'c', af = 'h', ag = 'a', ah = 'r';
 	int ai = '_';
 	
 /* write the character to a stdout*/
