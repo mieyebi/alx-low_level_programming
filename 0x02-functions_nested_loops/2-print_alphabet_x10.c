@@ -8,18 +8,18 @@
 * return void on success*/
 
 void print_alphabet_x10(void)
-int az = 0;
 {
-	while (az <= 10);
-	{
-	int am = 'a';
-	while (am <= 'z');
+	int az = 0;
+	{	while (az <= 10);
 		{
-		_putchar(am);
-		am++;
+			int am = 'a';
+			while (am <= 'z');
+			{
+				_putchar(am);
+				am++;
 			}
-	_putchar('\n');
-	az++;
+			_putchar('\n');
+			az++;
+		}
 	}
 }
-
