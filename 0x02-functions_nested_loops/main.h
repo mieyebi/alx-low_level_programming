@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void print_alphabet(void)
-int _putchar(int ch, int ab);
+int _putchar(int ch);
 
-{ return(0);
-}
+
