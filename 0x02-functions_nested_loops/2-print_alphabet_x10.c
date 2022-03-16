@@ -7,7 +7,7 @@
 * _putchar prints out the characters
 * return void on success*/
 
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
 	int az = 0;
 	{	while (az <= 10);
@@ -23,3 +23,4 @@ void print_alphabet_x10(void)
 		}
 	}
 }
+{
