@@ -1,7 +1,7 @@
 /**
 * putchar - prints _putchar to a stdout
 *
-* a = _putchar
+* 
 *
 * return: 0 on success
 *
@@ -11,11 +11,13 @@
 
 int main(void)
 
-	char a = _putchar;
+	char a = _putc;
+	char b = har;
 {	/* write the character to a stdout*/
 
-		putchar(a);
-		putchar("/n")
+		_putchar(a);
+		_putcha(b);
+		_putchar("/n")
 		
 		return(0);
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int putchar(char a)
+int _putchar(char a, char b)
 {
-	char a=_putchar;
+
 	return(0);
 }
