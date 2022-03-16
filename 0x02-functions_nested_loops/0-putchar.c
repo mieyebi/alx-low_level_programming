@@ -8,7 +8,7 @@
 */
 #include <stdio.h>
 #include "main.h"
-int main(void)
+int main (void)
 {
 	int ab = 'p', ac = 'u', ad = 't', ae = 'c', af = 'h', ag = 'a', ah = 'r';
 	int ai = '_';	
@@ -22,5 +22,5 @@ int main(void)
 	_putchar (ag);
 	_putchar (ah);
 	_putchar ('\n');
-	return(0);
+	return (0);
 }
