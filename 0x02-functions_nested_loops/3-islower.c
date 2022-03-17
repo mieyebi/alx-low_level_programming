@@ -1,20 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* printing lower alphabets with _islower
-* int c - is a lower case alphabet
-* _islower - checks lower case characters
-* Return: 1 for lowercase alphabets else 0
-*/
+ * _islower - checks if c is lower case or upper
+ * @c: is int
+ * Return: 1 if lower else 0
+ */
 int _islower(int c)
 {
-		if ((_islower(c) >= 'a') && (_islower(c) <= 'z'))
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-}
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 
+}
