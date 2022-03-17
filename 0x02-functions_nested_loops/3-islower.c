@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 /**
-
 * printing lower alphabets with _islower
 * int c - is a lower case alphabet
 * _islower - checks lower case characters
@@ -9,7 +8,7 @@
 */
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 'a' || c <= 'z')
 	{
 		if (_islower(c))
 		{
