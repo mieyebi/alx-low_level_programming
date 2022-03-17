@@ -7,7 +7,7 @@
  */
 int _islower(int c)
 {	
-	char c = 'c';
+	char 'c';
 	if (_islower(c))
 	{
 		return (1);
