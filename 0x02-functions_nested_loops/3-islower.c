@@ -5,10 +5,10 @@
  * @c - int
  * Return: 1 for lowercase alphabets else 0
  */
-int _islower(void)
+int _islower(int c)
 {
-	int az = 'c';
-        if (_islower(az))
+	int = 'c';
+        if (_islower(c))
 	{
 		return (1);
 	}
