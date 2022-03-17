@@ -6,9 +6,9 @@
  * Return: 1 for lowercase alphabets else 0
  */
 int _islower(int c)
-{
-
-        if (_islower(c))
+{	
+	char c = 'c';
+	if (_islower(c))
 	{
 		return (1);
 	}
