@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 {
 	int am;
 	int az = 0;
-	while (az <= 10)
+	while (az < 10)
 		{
 			am = 'a';
 			while (am <= 'z')
