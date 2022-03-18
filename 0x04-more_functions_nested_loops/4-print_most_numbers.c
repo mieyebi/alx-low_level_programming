@@ -11,16 +11,9 @@ void print_most_numbers(void)
 	int c;
 	c = '0';
 
-	while (c <= '9')
+	while (!c = '2' && !c = '4')
 	{
-		if (c = '2')
-		{
-			break;
-		}
-		if (c = '4')
-		{
-			break;
-		}
+		if (c <= '9')
 
 		_putchar(c);
 		c++;
