@@ -11,9 +11,7 @@ void more_numbers(void)
 	int b = '0';
 	int c = '7';
 	int d = '2';
-	int e;
-
-	e = c * d;
+	int e = c * d;
 
 	for (b <= '9'; b++)
 	{
