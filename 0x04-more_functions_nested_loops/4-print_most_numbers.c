@@ -10,7 +10,7 @@ void print_most_numbers(void)
 	int c;
 	c = '0';
 
-	for ((c <= '9') && !(c = '2' || c = '4'))
+	while ((c <= '9') && !(c = '2' || c = '4'))
 	{
 		_putchar(c);
 		c++;
