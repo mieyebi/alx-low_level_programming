@@ -9,14 +9,10 @@
 void print_most_numbers(void)
 {
 	int c;
-	c = '0';
 
-	while (!c = '2' && !c = '4')
+	for (c = '0'; c <= '9'; c++; !c= '2'; !c = '4')
 	{
-		if (c <= '9')
-
 		_putchar(c);
-		c++;
 	}
 	_putchar('\n');
 }
