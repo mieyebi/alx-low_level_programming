@@ -3,9 +3,7 @@
 
 /**
 * print_numbers - prints numbers
-* _putchar - prints out characters
-* @c - c is an integer
-* return void on success
+*
 */
 
 void print_numbers(void)
