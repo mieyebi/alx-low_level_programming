@@ -9,6 +9,6 @@
 
 int mul(int a, int b);
 {
-	if (mul(a * b));
+	int c = a * b;
 	return (0);
 }
