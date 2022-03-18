@@ -2,13 +2,13 @@
 
 /**
 * mul - multiplies integers
-* int c - is an integer
+* int a - is an integer
 * int b - is an integer
 * Return: 0
 */
 
 int mul(int a, int b);
 {
-	if (a * b)
+	a * b;
 	return (0);
 }
