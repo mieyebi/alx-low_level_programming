@@ -3,8 +3,8 @@
 
 /**
 * print_numbers - prints numbers
+* _putchar - prints out characters
 * @a - a is an integer 
-* Return: always 0
 */
 
 void print_numbers(void)
