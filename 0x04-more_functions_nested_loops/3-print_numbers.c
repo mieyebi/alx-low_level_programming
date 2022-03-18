@@ -4,17 +4,18 @@
 /**
 * print_numbers - prints numbers
 * _putchar - prints out characters
-* @a - a is an integer 
+* @c - c is an integer
+* return void on success
 */
 
 void print_numbers(void)
-{	int a;
-	a = '0';
+{	int c;
+	c = '0';
 
-	for (a <= '9')
+	for (c <= '9')
 	{
-		_putchar(a);
-		a++;
+		_putchar(c);
+		c++;
 	}
 	_putchar('\n');
 }
