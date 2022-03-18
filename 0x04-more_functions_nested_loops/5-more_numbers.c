@@ -3,7 +3,6 @@
 
 /**
 * more_numbers - prints numbers severally
-* _putchar - prints numbers
 *
 */
 
