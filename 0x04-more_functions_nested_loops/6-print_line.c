@@ -15,13 +15,5 @@ void print_line(int n)
 			_putchar('_');
 			a++;
 		}
-		else
-		{
-			_putchar('\n');
-		}
-	}
-	else
-	{
-		_putchar('\n')
-	}
+	_putchar('\n');
 }
