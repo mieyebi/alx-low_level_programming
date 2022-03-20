@@ -1,9 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
 * mul - multiplies integers
 * @a: is an integer
 * @b: is an integer
+* return - return 0 on success
 */
 int mul(int a, int b)
 {
