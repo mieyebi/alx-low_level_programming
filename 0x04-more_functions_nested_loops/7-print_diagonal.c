@@ -8,8 +8,8 @@
 */
 void print_diagonal(int n)
 {
-	int z = 1;
-	if (z <= n)
+	int z = 0;
+	if (z < n)
 	{
 		_putchar('\\');
 		z++;

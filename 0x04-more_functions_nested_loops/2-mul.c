@@ -2,14 +2,15 @@
 
 /**
 * mul - multiplies integers
-* int a - is an integer
-* int b - is an integer
-* Return: 0
+* @a: is an integer
+* @b: is an integer
 */
-
 int mul(int a, int b);
 {
 	int c;
 	c = a * b;
-	return (c);
+	if (a, b)
+	{
+		return (c);
+	}
 }
