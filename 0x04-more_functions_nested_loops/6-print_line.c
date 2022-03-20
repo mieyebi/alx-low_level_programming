@@ -5,21 +5,23 @@
 * print_line - prints a straight line
 * _putchar - prints _ n times
 * int n - n is an integer
-* n - is the number of times to print a line
+* @n - is the number of times to print a line
 *
 */
 void print_line(int n)
 {
 	int a;
-	a = '_';
-
-	for (n > '0'; n++)
+	a = 1;
+	if (n > 0; a <= n; a++)
 	{
-		_putchar(a);
+		_putchar('_');
 	}
-	for (n = '0'; n <= '0'; n--)
+	else
 	{
-		_putchar('\n');
+		if (n <= 0);
+		{
+			_putchar('\n');
+		}
 	}
 	_putchar('\n');
 }
