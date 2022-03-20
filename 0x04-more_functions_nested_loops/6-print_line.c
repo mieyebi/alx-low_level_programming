@@ -1,29 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-* print_line - prints a straight line
-* _putchar - prints _ n times
-* int n - n is an integer
-* @n - is the number of times to print a line
-*
-*/
+ * print_line - prints seriesd of _
+ * @n: the number of _ to print
+ */
 void print_line(int n)
 {
-	int a;
-	a = '0';
-	if (n > '0')
+	if (n > 0)
 	{
-		for (a <= n; a++;)
+		int x = 0;
+
+		while (x < n)
 		{
 			_putchar('_');
-		}
-	}
-	else
-	{
-		if (n <= '0');
-		{
-			_putchar('\n');
+			x++;
 		}
 	}
 	_putchar('\n');
