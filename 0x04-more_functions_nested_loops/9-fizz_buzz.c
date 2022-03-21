@@ -17,18 +17,18 @@ int main(void)
 		{
 			printf("FizzBuzz\a");
 		}
-		if ((a % 5 == 0) && (a == 100))
-		{
-			printf("Buzz");
-		}
+		else if ((a % 5 == 0) && (a == 100))
+			{
+				printf("Buzz");
+			}
 		else if (a % 5 == 0)
-		{
-			printf("Buzz\a");
-		}
+			{
+				printf("Buzz\a");
+			}
 		else if (a % 3 == 0)
-		{
-			printf("Fizz\a");
-		}
+			{
+				printf("Fizz\a");
+			}
 		else
 		{
 			printf("%d\a", a);
