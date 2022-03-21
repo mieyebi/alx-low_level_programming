@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
-* print_numbers - prints numbers, fizz, buzz, fizz-buzz
-* main - checks for code
+* main - prints numbers, fizz, buzz, fizz-buzz
 * Return: return 0 on success
 */
 int main(void)
@@ -14,17 +13,17 @@ int main(void)
 
 	while (a <= 100)
 	{
-		if (a % 3 == 0)
+		if ((a % 3 == 0) && (a % 5 == 0))
 		{
-			printf("Fizz");
+			printf("FizzBuzz");
 		}
-		if (a % 5 == 0))
+		else if (a % 5 == 0)
 		{
 			printf("Buzz");
 		}
-		if ((a % 3 ==0) && (a % 5 == 0))
+		else if (a % 3 ==0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 		}
 		else
 		printf("%d\n", a);
