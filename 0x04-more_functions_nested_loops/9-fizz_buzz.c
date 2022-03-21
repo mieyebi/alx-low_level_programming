@@ -6,7 +6,7 @@
 * main - checks for code
 * Return: return 0 on success
 */
-void print_numbers(void)
+int main(void)
 {
 	int a;
 
@@ -37,4 +37,6 @@ void print_numbers(void)
 		a++;
 	}
 	printf("\n");
+
+	return (0);
 }
