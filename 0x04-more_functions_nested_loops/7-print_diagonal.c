@@ -9,6 +9,7 @@
 void print_diagonal(int n)
 {
 	int z = 0;
+
 	if (z < n)
 	{
 		_putchar('\\');
