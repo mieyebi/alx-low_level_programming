@@ -15,18 +15,18 @@ int main(void)
 	{
 		if ((a % 3 == 0) && (a % 5 == 0))
 		{
-			printf("FizzBuzz\i");
+			printf("FizzBuzz\a");
 		}
 		else if (a % 5 == 0)
 		{
-			printf("Buzz\i");
+			printf("Buzz\a");
 		}
 		else if (a % 3 == 0)
 		{
-			printf("Fizz\i");
+			printf("Fizz\a");
 		}
 		else
-			{printf("%d\i", a);
+			{printf("%d\a", a);
 
 			a++;
 		}
