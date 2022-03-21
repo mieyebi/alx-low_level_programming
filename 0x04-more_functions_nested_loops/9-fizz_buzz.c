@@ -25,8 +25,13 @@ int main(void)
 		{
 			printf("Fizz\a");
 		}
+		else if ((a % 5 == 0) && (a == 100))
+		{
+			printf("Buzz");
+		}
 		else
-			{printf("%d\a", a);
+		{
+			printf("%d\a", a);
 
 			a++;
 		}
