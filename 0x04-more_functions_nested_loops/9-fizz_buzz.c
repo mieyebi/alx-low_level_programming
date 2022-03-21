@@ -10,28 +10,23 @@ int main(void)
 {
 	int a;
 
-	int b;
-
-	int c;
-
-	int d;
-
 	a = 1;
 
 	while (a <= 100)
 	{
-		if (b = (a % 3 == 0))
+		if (a % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		if (c = (a % 5 == 0))
+		if (a % 5 == 0))
 		{
 			printf("Buzz");
 		}
-		if (d = (a % 3 ==0) && (a % 5 == 0))
+		if ((a % 3 ==0) && (a % 5 == 0))
 		{
 			printf("FizzBuzz");
 		}
+		else
 		printf("%d\n", a);
 
 		a++;
