@@ -3,10 +3,10 @@
 
 /**
 * reset_to_98 - resets an integer to 98
-* @*n: pointer to an integer
+* @n: pointer to an integer
 */
 void reset_to_98(int *n)
 {
-	printf("n=%d\n", *n);
+	printf("%d\n", n);
 	*n = 98;
 }
