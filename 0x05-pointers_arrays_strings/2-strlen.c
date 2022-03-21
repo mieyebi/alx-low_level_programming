@@ -10,6 +10,6 @@ int _strlen(char *s)
 {
 	int n;
 
-	s[n] = "(n + 1)";
+	*s = "(n + 1)";
 
 }
