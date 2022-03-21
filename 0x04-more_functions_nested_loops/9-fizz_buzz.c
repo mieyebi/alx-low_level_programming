@@ -16,7 +16,9 @@ void print_numbers(void)
 
 	int d;
 
-	for (a = 1; a <= 100; a++)
+	a = 1;
+
+	while (a <= 100)
 	{
 		if (b = (a % 3 == 0))
 		{
@@ -31,6 +33,8 @@ void print_numbers(void)
 			printf("FizzBuzz");
 		}
 		printf("%d\n", a);
+
+		a++;
 	}
 	printf("\n");
 }
