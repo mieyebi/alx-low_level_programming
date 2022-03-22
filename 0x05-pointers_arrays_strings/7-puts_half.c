@@ -6,39 +6,36 @@
 *
 * @str: a full string
 *
-* n = length of the string - 1
+* @n: length of the string - 1
 */
 
 void puts_half(char *str)
 {
-	int a, b, n;
+	int a, b, c, n;
 
 	a = strlen(str);
 
-	b = (a / 2);
+	c = (a - 1);
 
-	n = ((a -1) / 2);
+	b = (c / 2);
+
+	n = ((c -1) / 2);
 
 
-	if (a % 2 == 0)
-	{	if (b <= a)
-		{	while (b != '\0')
-			{
-				_putchar(str[b]);
-				b++;
-			}
+	if (c % 2 == 0)
+	{	while (b <= c)
+		{
+			_putchar(str[b]);
+			b++;
 		}
-
 		_putchar('\n');
 	}
 	else
 	{
-		if (n <= a)
-		{	while (n != '\0')
-			{
-				_putchar(str[n]);
-				n++;
-			}
+		while (n <= c)
+		{
+			_putchar(str[n]);
+			n++;
 		}
 		_putchar('\n');
 	}
