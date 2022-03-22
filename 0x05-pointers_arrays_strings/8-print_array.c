@@ -21,7 +21,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", *(a + b));
 	}
-	for (c >= b; c < n; c++)
+	for (c = b; c < n; c++)
 	{
 		printf("%d", *(a + c));
 	}
