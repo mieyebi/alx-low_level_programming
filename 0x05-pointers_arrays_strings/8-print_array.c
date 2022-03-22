@@ -11,16 +11,17 @@
 
 void print_array(int *a, int n)
 {
-	int z = 0;
+	int b;
 
-	while (z < (n - 1))
+	int c;
+
+	c = (n - 1);
+
+	for (b = 0; b < c; b++)
 	{
-		printf("%d, ", a[z]);
-		z++;
+		printf("%d, ", a[b]);
 	}
-	while ((z = (n - 1)))
-	{
-		printf("%d", a[z]);
-	}
+	printf("%d", a[c]);
+
 	printf("\n");
 }
