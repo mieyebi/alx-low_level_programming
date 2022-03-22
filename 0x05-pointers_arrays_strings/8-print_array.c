@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
 * print_array - prints elements of an array individually
@@ -12,13 +11,14 @@
 
 void print_array(int *a, int n)
 {
-	int z;
+	int z = 0;
 
-	for (z = 0; z < (n -1); z++)
+	while (z < (n - 1))
 	{
 		printf("%d, ", a[z]);
+		z++;
 	}
-	if ((z = (n - 1)))
+	while (z = (n - 1))
 	{
 		printf("%d", a[z]);
 	}
