@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 
 	int c;
 
-	n = sizeof(a);
+	n = sizeof(*a);
 
 	c = (n - 1);
 
