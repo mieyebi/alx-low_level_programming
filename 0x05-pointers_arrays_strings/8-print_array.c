@@ -12,9 +12,9 @@
 
 void print_array(int *a, int n)
 {
-	int z;
+	int z = 0;
 
-	for (z = 0; z < n; z++)
+	while (z < n)
 	{
 		printf("%d, ", a[z]);
 		{
@@ -22,6 +22,7 @@ void print_array(int *a, int n)
 			{
 				printf("%d", a[z]);
 			}
+		z++;
 		}
 	}
 	printf("\n");
