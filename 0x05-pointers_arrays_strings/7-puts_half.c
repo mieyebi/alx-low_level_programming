@@ -21,19 +21,17 @@ void puts_half(char *str)
 
 
 	if (a % 2 == 0)
-	{	while (b <= a)
+	{	for (b <= a; b != '\0'; b++)
 		{
 			_putchar(str[b]);
-			b++;
 		}
 		_putchar('\n');
 	}
 	else
 	{
-		while (n <= a)
+		for (n <= a; n != '\0'; n++)
 		{
 			_putchar(str[n]);
-			n++;
 		}
 		_putchar('\n');
 	}
