@@ -3,12 +3,12 @@
 
 /**
 * print_diagonal - prints a diagonal line on the terminal using /
-*@n: the number of times to print /
+* @n: the number of times to print /
 *
 */
 void print_diagonal(int n)
 {
-if (n > 0)
+	if (n > 0)
 	{
 		int x, y;
 
@@ -31,4 +31,3 @@ if (n > 0)
 	}
 	_putchar('\n');
 }
-
