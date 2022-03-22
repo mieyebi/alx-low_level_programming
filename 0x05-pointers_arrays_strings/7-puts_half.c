@@ -6,7 +6,6 @@
 *
 * @str: a full string
 *
-* @n: length of the string - 1
 */
 
 void puts_half(char *str)
@@ -17,7 +16,7 @@ void puts_half(char *str)
 
 	b = (a / 2);
 
-	n = ((a -1) / 2);
+	n = ((a - 1) / 2);
 
 
 	if (a % 2 == 0)
