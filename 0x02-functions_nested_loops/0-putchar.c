@@ -5,7 +5,7 @@
 * _putchar - prints to a stdout
 * main - performs the putchar function
 * @void: is void
-* return: void on success
+* return: 0 on success
 */
 
 int main(void)
@@ -23,5 +23,5 @@ int main(void)
 	_putchar(ah);
 	_putchar('\n');
 
-	return (void);
+	return (0);
 }
