@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
-* _putchar - prints to a stdout
 * main - performs the putchar function
 * @void: is void
 * return: 0 on success
