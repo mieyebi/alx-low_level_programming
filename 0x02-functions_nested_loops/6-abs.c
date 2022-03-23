@@ -20,7 +20,7 @@ int _abs(int a)
 	}
 	else if (a < n)
 	{
-		_putchar(-(a));
+		_putchar((-1 * a));
 	}
 	return (0);
 }
