@@ -4,7 +4,8 @@
 /**
 * _putchar - prints to a stdout
 * main - performs the putchar function
-* return: 0 on success
+* @void: is void
+* return: void on success
 */
 
 int main(void)
