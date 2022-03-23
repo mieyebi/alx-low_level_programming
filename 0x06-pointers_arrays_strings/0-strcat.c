@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
-* _strcat - concatenates two strings
+* *_strcat - concatenates two strings
 *
 * @dest: destination of concatenation
 *
@@ -16,9 +17,9 @@
 char *_strcat(char *dest, char *src)
 
 {
-	int a = (sizeof dest);
+	int a = sizeof(dest);
 
-	int b = (sizeof src);
+	int b = sizeof(src);
 
 	int c;
 
