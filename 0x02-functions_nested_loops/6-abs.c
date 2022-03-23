@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+
 /**
 * _abs - computes the absolute value of an integer
 *
@@ -10,7 +10,13 @@
 */
 int _abs(int a)
 {
-	abs(a);
+	int n;
 
+	n = 0;
+
+	if (a >= n)
+	{
+		_putchar(a);
+	}
 	return (0);
 }
