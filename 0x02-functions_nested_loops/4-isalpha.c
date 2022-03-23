@@ -3,9 +3,10 @@
 
 /**
 * _isalpha - checks for uppercase alphabet
-* int c - @c is an integer
-* c - a lowercase integer
-* Return - returns 0 on suceess, otherwise 1
+*
+* @c: a lowercase integer
+*
+* Return: 0 on suceess, otherwise 1
 *
 */
 int _isalpha(int c)
