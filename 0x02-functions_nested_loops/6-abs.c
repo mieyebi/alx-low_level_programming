@@ -10,13 +10,7 @@
 */
 int _abs(int a)
 {
-	int n;
+	abs(a);
 
-	n = 0;
-
-	if (a >= n)
-	{
-		_putchar(a);
-	}
 	return (0);
 }
