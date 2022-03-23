@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -27,12 +26,12 @@ char *_strcat(char *dest, char *src)
 
 	for (c = 0; c < a; c++)
 	{
-		printf("%d", dest[c]);
+		_putchar(dest[c]);
 	}
 
 	for (d = 0; d <= b; d++)
 	{
-		printf("%d", src[d]);
+		_putchar(src[d]);
 	}
 	return (dest);
 }
