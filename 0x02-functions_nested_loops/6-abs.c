@@ -6,17 +6,12 @@
 *
 * @a: is an integer
 *
-* Return: 0 on success
+* Return: absolute value on success
 */
 int _abs(int a)
 {
-	int n;
-
-	n = 0;
-
 	if (a >= n)
 	{
-		_putchar(a);
+		return (a);
 	}
-	return (0);
 }
