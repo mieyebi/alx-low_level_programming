@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * check arguments with print_sign
- * int @n
- * Return: 1 and print + if positive, 0 if 0 else -1
- */
+* print_sign - check arguments with print_sign
+*
+* @n: is an integer
+*
+* Return: 1 and print + if positive, 0 if 0, else -1
+*/
 int print_sign(int n)
 {
 	if (n > 0)
