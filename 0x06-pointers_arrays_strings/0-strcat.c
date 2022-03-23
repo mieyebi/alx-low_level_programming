@@ -6,12 +6,12 @@
 /**
 * *_strcat - concatenates two strings
 *
-* @dest: destination of concatenation
+* @*dest: destination of concatenation
 *
-* @src: string to concatenate
+* @*src: string to concatenate
 *
 * Return: dest on success
-*
+* main - reference to main
 */
 
 char *_strcat(char *dest, char *src)
