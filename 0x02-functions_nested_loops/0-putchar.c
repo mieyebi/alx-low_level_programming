@@ -22,5 +22,6 @@ int main(void)
 	_putchar(ag);
 	_putchar(ah);
 	_putchar('\n');
-	return (0);
+
+	return (void);
 }
