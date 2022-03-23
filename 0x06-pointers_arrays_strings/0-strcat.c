@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* *_strcat - concatenates two strings
+* _strcat - concatenates two strings
 *
 * @dest: destination of concatenation
 *
@@ -22,13 +22,16 @@ char *_strcat(char *dest, char *src)
 
 	int c;
 
+	int d;
+
 	for (c = 0; c < a; c++)
 	{
 		printf("%d", dest[c]);
 	}
-	for (c = 0; c <= b; c++)
+
+	for (d = 0; d <= b; d++)
 	{
-		printf("%d", src[c]);
+		printf("%d", src[d]);
 	}
 	return (dest);
 }
