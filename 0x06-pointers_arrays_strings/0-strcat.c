@@ -16,22 +16,24 @@
 char *_strcat(char *dest, char *src)
 
 {
-	int a = strlen(dest);
+	int a = sizeof(dest);
 
-	int b = strlen(src);
+	int b = sizeof(src);
 
-	int c;
+	int c = 0;
 
-	int d;
+	int d = 0;
 
-	for (c = 0; c < a; c++)
+	while ((c < a) && (dest[c] != '\0'))
 	{
-		_putchar(dest[c]);
+		c++;
 	}
 
-	for (d = 0; d <= b; d++)
+	while ((d <= b) && (src[d] != '\0'))
 	{
-		_putchar(src[d]);
+		(dest[c] = src[d]);
+		c++;
+		d++;
 	}
 	return (dest);
 }
