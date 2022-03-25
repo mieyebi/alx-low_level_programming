@@ -5,6 +5,7 @@
 /**
 * *string_toupper - converts lowercase strings to uppercase
 * @c: pointer
+* Return: c
 */
 
 char *string_toupper(char *c)
@@ -26,4 +27,5 @@ char *string_toupper(char *c)
 			b++;
 		}
 	}
+	return (c);
 }
