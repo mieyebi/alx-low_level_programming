@@ -18,7 +18,7 @@ char *string_toupper(char *c)
 
 	n = sizeof(c);
 
-	while ((c[a] != '\0') && (a < n) && (b == a)) 
+	while ((c[a] != '\0') && ((a < n) && (b == a)))
 	{
 		if ((a >= 'a' && a <= 'z') && (b >= 'A' && b >= 'Z'))
 		{
