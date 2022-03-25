@@ -18,14 +18,14 @@ char *string_toupper(char *c)
 
 	n = sizeof(c);
 
-	if ((a >= 'a' && a <= 'z') && (b >= 'A' && b >= 'Z'))
+	while ((c[a] != '\0') && (a < n) && (b == a)) 
 	{
-		while ((c[a] != '\0') && (a < n))
+		if ((a >= 'a' && a <= 'z') && (b >= 'A' && b >= 'Z'))
 		{
 			c[b];
-			a++;
-			b++;
 		}
+	a++;
+	b++;
 	}
 	return (c);
 }
