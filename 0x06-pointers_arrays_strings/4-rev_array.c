@@ -24,6 +24,7 @@ void reverse_array(int *a, int n)
 */
 	while ((n >= 0) && (a[n] != '\0'))
 	{
+		a[n];
 		n--;
 	}
 }
