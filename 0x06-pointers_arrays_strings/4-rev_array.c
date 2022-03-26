@@ -22,13 +22,9 @@ void reverse_array(int *a, int n)
 	}
 }
 */
-	int z;
-
-	z = (n - 1);
-
-	while ((n > 0) && (a[z] != '\0'))
+	while ((n > 0) && (a[n] != '\0'))
 	{
-		a[z];
-		z--;
+		a[n];
+		n--;
 	}
 }
