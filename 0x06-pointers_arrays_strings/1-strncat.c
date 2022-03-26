@@ -4,12 +4,15 @@
 
 /**
 * *_strncat - concatenates two strings
+*
 * @dest: is the destination
+*
 * @src: is the source
+*
 * @n: is an integer
+*
 * Return: return dest on success
 */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
@@ -22,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while ( j < n)
+	while (j < n)
 	{
 		*(dest + i) = *(src + j);
 		{
