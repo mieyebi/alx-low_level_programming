@@ -27,24 +27,15 @@ int _strcmp(char *s1, char *s2)
 			{
 				b = 0;
 			}
-			else if (*(s1 + a) < *(s2 + a))
-			{
-				b = (0 - 1);
-			}
-			else if (*(s1 + a) > *(s2 + a))
+			else
 			{
 				b = 1;
 			}
 		}
 	}
-	else if ((c > d))
+	else
 	{
 		b = 1;
-	}
-
-	else if ((c < d))
-	{
-		b = (0 - 1);
 	}
 	return (b);
 }
