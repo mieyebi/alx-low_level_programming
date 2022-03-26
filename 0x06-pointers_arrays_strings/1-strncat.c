@@ -28,9 +28,10 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			if (*(src + i) != '\0')
 			{
-				i++;
-				j++;
+				break;
 			}
+			i++;
+			j++;
 		}
 	}
 	return (dest);
