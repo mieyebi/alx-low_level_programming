@@ -20,16 +20,15 @@ char *_strcat(char *dest, char *src)
 
 	int j = 0;
 
-	while (*dest != '\0')
+	while (*(dest + i) != '\0')
 	{
-		*(dest + i);
 		i++;
 	}
-	while (*src <= '\0')
+	while (*src != '\0')
 	{
-		*(src + j);
-		j++;
+		*(dest + i) = *(src + j);
+		i++;
+		src++;
 	}
-	*(dest + i) = *(src + j);
 	return (dest);
 }
