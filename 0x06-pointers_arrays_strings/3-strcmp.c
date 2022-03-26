@@ -11,79 +11,22 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int b, c, d;
+	int a, b;
 
-	c = strlen(s1);
+	a = 0;
 
-	d = strlen(s2);
-
-	if ((c == d))
-	{
-		int a;
-
-		for (a = 0; (a < c && a < d); a++)
+	while (*(s1 + a) != '\0' && *(s2 + a) != '\0')
 		{
-			if (*(s1 + a) == *(s2 + a) && (*(s1 + a) != '\0' && *(s2 + a) != '\0'))
+			if (*(s1 + a) == *(s2 + a))
 			{
 				b = 0;
 			}
-			else
+			else if (*(s1 + a) - *(s2 + a) != 0)
 			{
 				b = 1;
+				break;
 			}
-		}
-	}
-	else
-	{
-		b = 1;
-	}
-	return (b);
-}
-
-
-
-
-/**&& (a < c && a < d; a++	))
-	{
-		if (*(s1 + a) == *(s2 + a))
-		{
 			a++;
 		}
-		return (0);
-		else if (*(s1 + a) < (*(s2 + a))
-			break;
-			return (0 - 1);
-
-		else if (*(s1 + a) > (*(s2 + a))
-			break;
-			return (1);
-	}
-	return (0);
-
-	while (
-	{
-
-	/**for ( ; a < c && *(s1 + a) != '\0'; a++)
-	{
-		if (b < d && *(s1 + b) != '\0')
-		{
-			if (*(s1 + a) = *(s2 + b))
-			{
-				a++;
-				b++;
-			}
-			return (0);
-		}
-		else if (*(s1 + a) < *(s2 + b))
-		{
-			break;
-			return (-1);
-		}
-		else if (*(s1 + a) > *(s2 + b))
-		{
-			break;
-			return (1);
-		}
-	}
+	return (b);
 }
-*/
