@@ -11,15 +11,46 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int a, b, c, d;
+	int c, d;
 
-	a = b = 0;
+	c = strlen(s1);
 
-	c = sizeof(s1);
+	d = strlen(s2);
 
-	d = sizeof(s2);
+	if (c == d)
+		return (0);
 
-	for ( ; a < c && *(s1 + a) != '\0'; a++)
+	else if (c > d)
+		return (1);
+
+	else if (c < d)
+		return (0 - 1);
+}
+
+
+
+
+/**&& (a < c && a < d; a++	))
+	{
+		if (*(s1 + a) == *(s2 + a))
+		{
+			a++;
+		}
+		return (0);
+		else if (*(s1 + a) < (*(s2 + a))
+			break;
+			return (0 - 1);
+
+		else if (*(s1 + a) > (*(s2 + a))
+			break;
+			return (1);
+	}
+	return (0);
+
+	while (
+	{
+
+	/**for ( ; a < c && *(s1 + a) != '\0'; a++)
 	{
 		if (b < d && *(s1 + b) != '\0')
 		{
@@ -42,3 +73,4 @@ int _strcmp(char *s1, char *s2)
 		}
 	}
 }
+*/
