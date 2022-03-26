@@ -24,11 +24,11 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	while (*src != '\0')
+	while (*(src + j) <= '\0')
 	{
 		*(dest + i) = *(src + j);
 		i++;
-		src++;
+		j++;
 	}
 	return (dest);
 }
