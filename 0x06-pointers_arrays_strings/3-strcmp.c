@@ -16,17 +16,17 @@ int _strcmp(char *s1, char *s2)
 	a = 0;
 
 	while (*(s1 + a) != '\0' && *(s2 + a) != '\0')
+	{
+		if (*(s1 + a) == *(s2 + a))
 		{
-			if (*(s1 + a) == *(s2 + a))
-			{
-				b = 0;
-			}
-			else if (*(s1 + a) - *(s2 + a) != 0)
-			{
-				b = 1;
-				break;
-			}
-			a++;
+			b = 0;
 		}
+		else
+		{
+			b = *(s1 + a) - *(s2 + a);
+			break;
+		}
+		a++;
+	}
 	return (b);
 }
