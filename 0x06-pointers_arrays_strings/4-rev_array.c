@@ -11,7 +11,7 @@
 
 void reverse_array(int *a, int n)
 {
-	int z;
+/**	int z;
 
 	z = (n - 1);
 
@@ -21,10 +21,9 @@ void reverse_array(int *a, int n)
 		z--;
 	}
 }
-	/** n = sizeof(a);
-
+*/
 	while ((n >= 0) && (a[n] != '\0'))
 	{
 		n--;
 	}
-}*/
+}
