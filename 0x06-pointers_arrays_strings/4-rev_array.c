@@ -11,8 +11,9 @@
 
 void reverse_array(int *a, int n)
 {
-	for ( ; (n >= 0 && a[n] != '\0'); n--)
+	while (*(a + (n - 1)) != '\0')
 	{
 		*(a + (n - 1));
+		n--;
 	}
 }
