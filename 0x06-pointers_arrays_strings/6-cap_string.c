@@ -15,6 +15,7 @@ char *cap_string(char *c)
 	if (*(c + a) >= 'a' && *(c + a) <= 'z')
 	{
 		*(c + a) = *(c + a) - 32;
+	a++;
 	}
 	while (*(c + a) != '\0')
 	{
@@ -24,9 +25,9 @@ char *cap_string(char *c)
 		{
 			if (*(c + a) == sep[b])
 			{
-				if (*(c + a) >= 'a' && *(c + a) <= 'z')
+				if (*(c + a + 1) >= 'a' && *(c + a + 1) <= 'z')
 				{
-					*(c + a) = *(c + a) - 32;
+					*(c + a + 1) = *(c + a + 1) - 32;
 				}
 			}
 		}
