@@ -15,13 +15,10 @@ char *string_toupper(char *c)
 	a = 0;
 
 	while (*(c + a) != '\0')
-	{	if (*(c + a) >= 'a' && *(c + a) <= 'z')
+	{
+		if (*(c + a) >= 'a' && *(c + a) <= 'z')
 		{
 			*(c + a) = *(c + (a + 32));
-		}
-		else
-		{
-			break;
 		}
 		a++;
 	}
