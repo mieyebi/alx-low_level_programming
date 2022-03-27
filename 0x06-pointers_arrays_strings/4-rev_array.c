@@ -20,6 +20,7 @@ void reverse_array(int *a, int n)
 		for (x = 0; (x < w && w < n); x++)
 		{
 			int y;
+
 			y = *(a + z);
 			*(a + z) = *(a + x);
 			*(a + x) = y;
