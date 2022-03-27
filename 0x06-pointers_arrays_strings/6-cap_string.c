@@ -16,11 +16,12 @@ char *cap_string(char *c)
 	}
 	while (*(c + a) != '\0' && *(c + a) == ' ')
         {
-                a++;
+		a++;
 		if (*(c + a) >= 'a' && *(c + a) <= 'z')
                 {
 			*(c + a) = *(c + a) - 32;
 		}
+		a++;
 	}
 	return (c);
 }
