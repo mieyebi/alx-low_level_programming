@@ -20,10 +20,6 @@ char *string_toupper(char *c)
 		{
 			*(c + a) = *(c + (a - 32));
 		}
-		else
-		{
-			break;
-		}
 		a++;
 	}
 	return (c);
