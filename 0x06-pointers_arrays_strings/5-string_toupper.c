@@ -10,22 +10,20 @@
 
 char *string_toupper(char *c)
 {
-	int a, b, n;
+	int a;
 
 	a = 0;
 
-	b = 0;
-
-	n = sizeof(c);
-
-	while ((c[a] != '\0') && ((a < n) && (b == a)))
-	{
-		if ((a >= 'a' && a <= 'z') && (b >= 'A' && b >= 'Z'))
+	while (*(c + a) != '\0')
+	{	if (*(c + a) >= 'a' && *(c + a) <= 'z')
 		{
-			c[b];
+			*(c + a) = *(c + (a + 32));
 		}
-	a++;
-	b++;
+		else
+		{
+			break;
+		}
+		a++;
 	}
 	return (c);
 }
