@@ -16,9 +16,7 @@ char *cap_string(char *c)
 	}
 	while ((a > 0) && (*(c + a) != '\0' && *(c + a) == ' '))
         {
-		a++;
-		break;
-		*(c + a) = *(c + a) - 32;
+		*(c + a) = *(c + (a + 1)) - 32;
 		a++;
 	}
 	return (c);
