@@ -18,10 +18,7 @@ char *cap_string(char *c)
         {
 		a++;
 		break;
-		if (*(c + a) >= 'a' && *(c + a) <= 'z')
-                {
-			*(c + a) = *(c + a) - 32;
-		}
+		*(c + a) = *(c + a) - 32;
 		a++;
 	}
 	return (c);
