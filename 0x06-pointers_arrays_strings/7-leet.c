@@ -4,33 +4,27 @@
 /**
 * *leet - encodes a strings
 * @a: pointer to char
-* Return a;
+* Return: a;
 */
 
 char *leet(char *a)
 {
-	int b = 0;
+	int i, b;
 
-	int enc[] = {65, 97, 69, 101, 111, 79, 108, 76, 116, 84};
+	int low[] = {97, 101, 111, 116, 108};
 
-	for (*(a + b) != '0'; (*(a + b) >= 'A' && *(a + b) <= 'z'); b++)
+	int upp[] = {65, 69, 79, 84, 76};
+
+	int num[] = {34, 33, 30, 37, 31};
+
+	for (b = 0; *(a + b) != '0'; b++)
 	{
-		int c = 0;
-
-		for (c = 0; c < 10; c++)
-
-		if (*(a + b) == enc[c])
+		for (i = 0; i < 5; i++)
 		{
-			*(a + b) + 65 = 4;
-			*(a + b) + 97 = 4;
-			*(a + b) + 69 = 3;
-			*(a + b) + 101 = 3;
-                        *(a + b) + 111 = 0;
-                        *(a + b) + 79 = 0;
-			*(a + b) + 108 = 7;
-			*(a + b) + 76 = 7;
-			*(a + b) + 116 = 1;
-			*(a + b) + 84 = 7;
+			if (*(a + b) == low[i] || *(a + b) == upp[i])
+			{
+				*(a + b) = num[i];
+			}
 		}
 	}
 	return (a);
