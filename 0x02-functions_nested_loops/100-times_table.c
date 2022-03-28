@@ -18,10 +18,10 @@ void print_times_table(int n)
 		{
 			for (a = 0; a <= c; a++)
 			{
-				b = (a * c);
-
 				if (a < c)
 				{
+					b = (a * c);
+
 					if (b >= 0 && b <= 9)
 					{
 						_putchar(b);
