@@ -9,7 +9,7 @@
 * @src: memory source
 *
 * @n: unsigned int type
-*
+* Return: dest on success
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
