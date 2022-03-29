@@ -16,26 +16,29 @@ char *_strchr(char *s, char c)
 {
 	int a;
 
-	int b = 0;
+	int b;
 
-	char *p;
+	b = 0;
 
-	for (a = 0; *(s + a) != '\0'; a++)
+	for (a = 0; *(s + a) == '\0'; a++)
 	{
-		if (*(s + a) == c)
+		 if (*(s + a) != c && *(s + a) == '\0')
+		{
+			*(s + a) = 00;
+		}
+
+		else if (*(s + a) == c)
 		{
 			break;
-
-			*(s + a) = *(p + b);
-
-			while (*(p + b) != '\0')
-			{
-				b++;
-			}
 		}
-		else if (*(s + a) != c && *(s + a) == '\0')
-				s[a] = 0;
-
 	}
+
+	*(s + a) = *(s + b);
+
+	while (*(s + b) != '\0')
+	{
+		b++;
+	}
+
 	return (s);
 }
