@@ -18,18 +18,8 @@ char *_strchr(char *s, char c)
 
 	a = b = 0;
 
-	if (*(s + a) != '\0')
+	for ( ; *(s + a) != '\0'; a++)
 	{
-		while (*(s + a) != c)
-		{
-			a++;
-		}
-		return (00);
-	}
-	else
-	while (*(s + a) != '\0')
-	{
-		++a;
 		if (*(s + a) == c)
 		{
 			*(s + a) = *(s + b);
