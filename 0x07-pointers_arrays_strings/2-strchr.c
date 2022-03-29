@@ -33,8 +33,8 @@ char *_strchr(char *s, char c)
 		if (*(s + a) == c)
 		{
 			*(s + a) = *(s + b);
-			break;
 		}
+		break;
 	}
 	while (*(s + b) != '\0')
 	{
