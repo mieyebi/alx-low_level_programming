@@ -22,12 +22,7 @@ char *_strchr(char *s, char c)
 
 	for (a = 0; *(s + a) == '\0'; a++)
 	{
-		 if (*(s + a) != c && *(s + a) == '\0')
-		{
-			*(s + a) = 00;
-		}
-
-		else if (*(s + a) == c)
+		if (*(s + a) == c)
 		{
 			break;
 		}
