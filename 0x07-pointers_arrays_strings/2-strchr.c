@@ -8,7 +8,7 @@
 *
 * @c: character to locate
 *
-* Return: s or NULL on success
+  * Return: s or NULL on success
 *
 */
 
@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 
 	b = 0;
 
-	for (a = 0; *(s + a) == '\0'; a++)
+	for (a = 0; *(s + a) != '\0'; a++)
 	{
 		if (*(s + a) == c)
 		{
