@@ -8,7 +8,7 @@
 *
 * @c: character to locate
 *
-* Return: s on success
+* Return: s or NULL on success
 *
 */
 
@@ -33,7 +33,7 @@ char *_strchr(char *s, char c)
 	while (*(s + b) != '\0')
 	{
 		b++;
+		return (s);
 	}
-
-	return (s);
+	return (0);
 }
