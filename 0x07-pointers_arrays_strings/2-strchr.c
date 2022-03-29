@@ -14,23 +14,31 @@
 
 char *_strchr(char *s, char c)
 {
-	int a;
+	int a, b;
 
-	int b;
+	a = b = 0;
 
-	b = 0;
-
-	for (a = 0; *(s + a) != '\0'; a++)
+	if (*(s + a) != '\0')
 	{
+		while (*(s + a) != c)
+		{
+			a++;
+		}
+		return (00);
+	}
+	else
+	while (*(s + a) != '\0')
+	{
+		++a;
 		if (*(s + a) == c)
 		{
 			*(s + a) = *(s + b);
+			break;
 		}
-		break;
 	}
 	while (*(s + b) != '\0')
 	{
 		b++;
 	}
-	return (0);
+	return (s);
 }
