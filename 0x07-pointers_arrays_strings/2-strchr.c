@@ -24,16 +24,13 @@ char *_strchr(char *s, char c)
 	{
 		if (*(s + a) == c)
 		{
-			break;
+			*(s + a) = *(s + b);
 		}
+		break;
 	}
-
-	*(s + a) = *(s + b);
-
 	while (*(s + b) != '\0')
 	{
 		b++;
-		return (s);
 	}
 	return (0);
 }
