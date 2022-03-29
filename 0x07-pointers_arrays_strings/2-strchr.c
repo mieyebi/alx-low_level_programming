@@ -28,15 +28,14 @@ char *_strchr(char *s, char c)
 
 			*(s + a) = *(p + b);
 
-			while ( *(p + b) != '\0')
+			while (*(p + b) != '\0')
 			{
 				b++;
 			}
 		}
 		else if (*(s + a) != c && *(s + a) == '\0')
-		{
-			s[a] = 0;
-		}
+				s[a] = 0;
+
 	}
 	return (s);
 }
