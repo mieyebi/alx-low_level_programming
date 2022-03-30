@@ -12,11 +12,14 @@ void _print_rev_recursion(char *s)
 	int n = 0;
 
 	if (*s != '\0')
+	{
 		n++;
 		s++;
+	}
 
 	_putchar(*s);
 	--s;
+	--n;
 
 	if (n >= 0)
 	{
