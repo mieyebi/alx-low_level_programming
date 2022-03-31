@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _pow_recursions - prints x rasied to the power of y
+* _pow_recursion - prints x rasied to the power of y
 *
 * @x: an integer
 *
