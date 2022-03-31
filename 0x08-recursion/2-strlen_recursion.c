@@ -5,15 +5,17 @@
 * _strlen_recursion - returns the length of a string
 *
 * @s: s is a string of characters
-*
+* Return: a on success
 */
 
 int _strlen_recursion(char *s)
 {
-	int a = 0;
-	if (*(s + a) != '\0')
+
+	if (*s == '\0')
 	{
-		a++;
+		return (1);
 	}
-	return ((a + 1) + _strlen_recursion(s));
+	else
+	s++;
+	return (1 + _strlen_recursion(s));
 }
