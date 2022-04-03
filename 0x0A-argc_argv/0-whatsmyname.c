@@ -10,9 +10,8 @@
 * Return: 0 on success
 */
 
-int main (char *argv[])
+int main (int argc __attribute__((unused)), char *argv[])
 {
-	int argc __attribute__((unused));
 	_putchar(*argv[0]);
 	_putchar('\n');
 	return (0);
