@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		a++;
 	}
-	printf("%d\n", argv[a]);
+	printf("%s\n", argv[a]);
 
 	return (0);
 }
