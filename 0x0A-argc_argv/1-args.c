@@ -10,15 +10,15 @@
 * Return: 0 on success
 *
 */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int a = 0;
 
-	while (a <= argc)
+	while (a < argc)
 	{
 		a++;
 	}
-	printf("%s\n", argv[a]);
+	printf("%d\n", a);
 
 	return (0);
 }
