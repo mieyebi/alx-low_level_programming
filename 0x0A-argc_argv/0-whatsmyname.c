@@ -1,4 +1,4 @@
-#includee <stdio.h>
+#include <stdio.h>
 
 /**
 * main - is the function
@@ -10,8 +10,9 @@
 * Return: 0 on success
 */
 
-int main (int argc, char *argv[])
+int main (char *argv[])
 {
+	int argc __attribute__((unused));
 	_putchar(*argv[0]);
 	_putchar('\n');
 	return (0);
