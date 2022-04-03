@@ -12,7 +12,13 @@
 */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc);
+	int a = 0;
+
+	while (a <= argc)
+	{
+		a++;
+	}
+	printf("%d\n", a);
 
 	return (0);
 }
