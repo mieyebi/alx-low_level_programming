@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
 {
 	int a;
 
+	int sum = 0;
+
 
 	if (argc == 1)
 	{
@@ -30,11 +32,10 @@ int main(int argc, char *argv[])
 			return (1);
 		}*/
 
-			int sum = 0;
 
 			sum += atoi(argv[a]);
+	}
 			printf("%d\n", sum);
 
-	}
 	return (0);
 }
