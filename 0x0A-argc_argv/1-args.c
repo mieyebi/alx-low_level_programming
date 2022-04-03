@@ -10,7 +10,7 @@
 * Return: 0 on success
 *
 */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int a = 0;
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 	{
 		a++;
 	}
-	printf("%d\n", a);
+	printf("%d\n", argv[a]);
 
 	return (0);
 }
