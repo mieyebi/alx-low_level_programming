@@ -28,16 +28,19 @@ int main(int argc, char *argv[])
 	for (a = 1; a < argc; a++)
 	{
 		sum += atoi(argv[a]);
-		if (!isdigit(argv[a]))
-		{
-			printf("Error\n");
-			return (1);
-		}
+
 		if (*argv[a] < '0' || *argv[a] > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
+		if (!isdigit(argv[a]))
+		{
+			printf("Error\n");
+			return (1);
+
+		}
+
 
 	}
 
