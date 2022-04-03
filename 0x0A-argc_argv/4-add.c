@@ -30,7 +30,6 @@ int main(int argc, char *argv[])
 
 		if (atoi(argv[a]) < '0' || (atoi(argv[a]) > '9'))
 		{
-			break;
 			printf("Error\n");
 			return (1);
 		}
