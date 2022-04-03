@@ -26,16 +26,15 @@ int main(int argc, char *argv[])
 
 	for (a = 0; a < argc; a++)
 	{
-		if (*argv[a] <= 0 && (*argv[a] >= 'A' && *argv[a] <= 'z'))
+		sum += atoi(argv[a]);
+
+		if (*argv[a] < '1' && (*argv[a] >= 'A' && *argv[a] <= 'z'))
 		{
 			printf("Error\n");
 			return (1);
 		}
-
-
-			sum += atoi(argv[a]);
 	}
-			printf("%d\n", sum);
 
+	printf("%d\n", sum);
 	return (0);
 }
