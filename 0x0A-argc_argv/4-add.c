@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
 * main - function call to add positive integers
 *
@@ -37,12 +37,6 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			/*if (!isdigit(argv[a]))
-			{
-				printf("Error\n");
-				return (1);
-
-			}*/
 		}
 
 	}
