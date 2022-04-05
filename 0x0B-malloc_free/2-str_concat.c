@@ -11,39 +11,35 @@
 * Return: NULL or pointer
 *
 */
-
 char *str_concat(char *s1, char *s2)
 {
 	int a, b, c, d;
-
 	char *z;
 
 	a = b = c = d = 0;
 
 	if (s1 == 0)
-	{
 		a = 0;
-	}
-	else while (s1[a] != 0)
+	else
 	{
-		a++;
+		while (s1[a] != 0)
+		{
+			a++;
+		}
 	}
-
 	if (s2 == 0)
-	{
 		b = 0;
-	}
-	else while (s2[b] != 0)
+	else
 	{
-		b++;
+		while (s2[b] != 0)
+		{
+			b++;
+		}
 	}
-
 	z = malloc((a + (b + 1)) * sizeof(char));
 
 	if (z == 0)
-	{
-		return (NULL);
-	}
+	return (NULL);
 
 	while (s1[c] != '\0')
 	{
