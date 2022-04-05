@@ -15,9 +15,10 @@
 int **alloc_grid(int width, int height)
 {
 	int **a;
-	int x, y;
+	int *b;
+	int x, y, z;
 
-	x = y = 0;
+	x = y = z = 0;
 
 	if (width <= '0' || height <= '0')
 	return (NULL);
@@ -28,10 +29,14 @@ int **alloc_grid(int width, int height)
 	while (height != 0)
 		y++;
 
-	a = malloc((width * height) * sizeof(int));
+	b = malloc((x * y) * sizeof(int));
 
-	if (a == 0)
+	if (b == 0)
 	return (NULL);
+
+	while (*(b + x + y) != '\0')
+		z++;
+	a = malloc(z * sizeof(int));
 
 	while (x < width)
 	{
