@@ -23,18 +23,20 @@ int **alloc_grid(int width, int height)
 	if (width <= '0' || height <= '0')
 	return (NULL);
 
-	while (width != 0)
+	/*while (width != 0)
 		x++;
 
 	while (height != 0)
-		y++;
+		y++;*/
 
-	b = malloc((x * y) * sizeof(int));
-
+	else
+	{
+		b = malloc((width * height) * sizeof(int));
+	}
 	if (b == 0)
 	return (NULL);
 
-	while (*(b + x + y) != '\0')
+	while (*(b + width + height) != '\0')
 		z++;
 	a = malloc(z * sizeof(int));
 
