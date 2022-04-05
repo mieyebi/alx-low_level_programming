@@ -20,7 +20,7 @@ char *_strdup(char *str)
 
 	a = c = 0;
 
-	while (str + c != 0)
+	while (*(str + c) != 0)
 	{
 		c++;
 	}
