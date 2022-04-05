@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* **alloc_grid - function call to return pointer to 2 dimensional array of integers
+* **alloc_grid - return pointer to 2 dimensional array of integers
 *
 * @width: 1st array dimension
 *
@@ -15,20 +15,11 @@
 int **alloc_grid(int width, int height)
 {
 	int **a;
-	int *w, *h;
-	int x, y, b, c;
+	int x, y;
 
 	x = y = 0;
 
 	if (width <= '0' || height <= '0')
-	return (NULL);
-
-	b = sizeof(width);
-	c = sizeof(height);
-
-	a = malloc((b * c) * sizeof(int));
-
-	if (a == 0)
 	return (NULL);
 
 	while (x < width)
@@ -37,18 +28,19 @@ int **alloc_grid(int width, int height)
 	while (y < height)
 		y++;
 
-	w = malloc(x * sizeof(int));
-	h = malloc(y * sizeof(int));
+	a = malloc((x * y) * sizeof(int));
 
-	while (w[x] != '\0')
+	if (a == 0)
+	return (NULL);
+
+	while (x < width)
 	{
-		w[x] = '0';
-		x++;
-		while (h[y] != '\0')
+		while (y < height)
 		{
 			a[x][y] = '0';
 			y++;
 		}
+		x++;
 	}
 	return (a);
 }
