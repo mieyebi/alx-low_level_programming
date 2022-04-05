@@ -20,7 +20,7 @@ char *_strdup(char *str)
 
 	c = 1;
 
-	while (str[c] != 0)
+	while (*(str + c) != 0)
 	{
 		c++;
 	}
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	if (str == NULL || b == 0)
 	return (NULL);
 
-	for (a = 0; a <= c && str[a] != 0; a++)
+	for (a = 0; str[a] != 0; a++)
 	{
 		str[a] = b[a];
 	}
