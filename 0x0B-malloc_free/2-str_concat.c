@@ -41,12 +41,12 @@ char *str_concat(char *s1, char *s2)
 	if (z == 0)
 	return (NULL);
 
-	while ((s1 == NULL) || (s1[c] != '\0'))
+	while ((s1 != NULL) && (s1[c] != '\0'))
 	{
 		z[c] = s1[c];
 		c++;
 	}
-	while ((s2 == NULL) || (s2[d] != '\0'))
+	while ((s2 != NULL) && (s2[d] != '\0'))
 	{
 		z[c] = s2[d];
 		c++;
