@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+* **alloc_grid - function call to return pointer to 2 dimensional array of intege>
+*
+* @width: 1st array dimension
+*
+* @height: second array dimension
+*
+* Return: NULL or a pointer
+*
+*/
+int **alloc_grid(int width, int height)
+{
+        int **a;
+        int *w;
+        int *h;
+
+        int x, y;
+
+        x = y = 0;
+
+        if (width <= '0')
+        return (NULL);
+
+        if (height <= '0')
+        return (NULL);
+
+        *a = malloc((width + height) * sizeof(int));
+
+        if (a == 0)
+        return (NULL);
+
+        while (x < width)
+                x++;
+
+        while (y < height)
+                y++;
+
+        w = malloc(x * sizeof(int));
+        h = malloc(y * sizeof(int));
+
+        if (a[w][h] != 0)
+                                [ Read 59 lines ]
+^G Get Help  ^O Write Out ^W Where Is  ^K Cut Text  ^J Justify   ^C Cur Pos
+^X Exit      ^R Read File ^\ Replace   ^U Paste Text^T To Spell  ^_ Go To Line
