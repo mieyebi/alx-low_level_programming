@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	if (str == NULL || b == 0)
 	return (NULL);
 
-	for (a = 0; *(str + a) != '\0'; a++)
+	for (a = 0; *(str + a) != 0; a++)
 	{
 		str[a] = b[a];
 	}
