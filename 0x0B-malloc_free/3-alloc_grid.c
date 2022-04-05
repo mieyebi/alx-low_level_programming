@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <stddef.h>
 
 /**
 * **alloc_grid - return pointer to 2 dimensional array of integers
