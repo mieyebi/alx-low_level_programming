@@ -14,11 +14,13 @@
 char *_strdup(char *str)
 
 {
-	int a, c;
+	int a;
+
+	unsigned int c;
 
 	char *b;
 
-	c = sizeof(*str);
+	c = sizeof(str);
 
 	b = malloc(c * sizeof(char));
 
