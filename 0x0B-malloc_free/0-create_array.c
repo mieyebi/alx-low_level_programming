@@ -22,13 +22,13 @@ char *create_array(unsigned int size, char c)
 
 	x = (void *)malloc(size * sizeof(char));
 
+	if (size == 0)
+	return (NULL);
+
 	for (y = 0; y < size; y++)
 	{
-		if (size == 0)
-		{
-			return (NULL);
-		}
 		x[y] = c;
+
 	}
 	return (x);
 }
