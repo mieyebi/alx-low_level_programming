@@ -18,7 +18,7 @@ char *_strdup(char *str)
 
 	char *b;
 
-	c = 4109;
+	c = sizeof(str);
 
 	b = malloc(c * sizeof(char));
 
