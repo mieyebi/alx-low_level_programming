@@ -29,10 +29,8 @@ int **alloc_grid(int width, int height)
 	while (height != 0)
 		y++;*/
 
-	else
-	{
-		b = malloc((width * height) * sizeof(int *));
-	}
+	b = malloc(width * sizeof(int *));
+
 	if (b == 0)
 	return (NULL);
 
