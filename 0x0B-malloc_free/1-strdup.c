@@ -14,11 +14,11 @@
 char *_strdup(char *str)
 
 {
-	int a;
+	unsigned int a;
 
 	char *b;
 
-	int c;
+	unsigned int c;
 
 	c = sizeof(str);
 
