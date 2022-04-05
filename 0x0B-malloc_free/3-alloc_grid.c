@@ -29,14 +29,14 @@ int **alloc_grid(int width, int height)
 	while (height != 0)
 		y++;*/
 
-	b = malloc(width * sizeof(int *));
+	b = malloc(width * sizeof(int));
 
 	if (b == 0)
 	return (NULL);
 
 	/*while (*(b + width + height) != '\0')
 		z++;*/
-	a = malloc((width * height) * sizeof(int *));
+	a = malloc((width * height) * sizeof(int));
 
 	while (x < width)
 	{
