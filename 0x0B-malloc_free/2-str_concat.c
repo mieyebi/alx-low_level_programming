@@ -14,11 +14,11 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, c;
+	int a, b;
 
 	char *z;
 
-	a = b = c = 0;
+	a = b = 0;
 
 	while (s1[a] != 0)
 	{
@@ -29,21 +29,22 @@ char *str_concat(char *s1, char *s2)
 		b++;
 	}
 
-	z = malloc(((a + 1) + (b + 1)) * sizeof(char));
+	z = malloc((a + (b + 1)) * sizeof(char));
 
-	if (z == 0 || (s1 == 0 || s2 == 0))
-	return (NULL);
+	if (z == 0)
+	{
+		return (NULL);
+	}
 
-	for (a = 0; s1[a] != '\0'; )
+	while (s1[a] != '\0')
 		{
-			z[c] = s1[a];
-			c++;
+			z[a] = s1[a];
 			a++;
 		}
-	for (b = 0; s2[b] != '\0'; )
+	while (s2[b] != '\0')
 		{
-			z[c + 1] = s2[b];
-			c++;
+			z[a + 1] = s2[b];
+			a++;
 			b++;
 		}
 	return (z);
