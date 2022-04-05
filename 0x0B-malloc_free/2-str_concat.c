@@ -20,11 +20,20 @@ char *str_concat(char *s1, char *s2)
 
 	a = b = c = d = 0;
 
-	while (s1[a] != 0)
+	if (s1 == 0)
+	{
+		a = 0;
+	}
+	else while (s1[a] != 0)
 	{
 		a++;
 	}
-	while (s2[b] != 0)
+
+	if (s2 == 0)
+	{
+		b = 0;
+	}
+	else while (s2[b] != 0)
 	{
 		b++;
 	}
