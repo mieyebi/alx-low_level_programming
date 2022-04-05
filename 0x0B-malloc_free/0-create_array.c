@@ -20,9 +20,9 @@ char *create_array(unsigned int size, char c)
 
 	char *x;
 
-	x = (void *)malloc(size * sizeof(char));
+	x = malloc(size * sizeof(char));
 
-	if (size == 0)
+	if (x == 0)
 	return (NULL);
 
 	for (y = 0; y < size; y++)
