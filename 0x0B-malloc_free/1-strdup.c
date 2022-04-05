@@ -18,9 +18,13 @@ char *_strdup(char *str)
 
 	char *b;
 
-	c = sizeof(int);
+	a = c = 0;
 
-	b = malloc(c * sizeof(str));
+	while (*(str + c) != 0)
+	{
+		c++;
+	}
+	b = malloc(c * sizeof(char));
 
 
 	if (str == NULL || b == 0)
