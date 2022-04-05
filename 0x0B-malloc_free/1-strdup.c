@@ -14,18 +14,11 @@
 char *_strdup(char *str)
 
 {
-	unsigned int a, c;
+	unsigned int a;
 
 	char *b;
 
-	c = 1;
-
-	while (*(str + c) != 0)
-	{
-		c++;
-	}
-
-	b = malloc(c * sizeof(char));
+	b = malloc(sizeof(str));
 
 	if (str == NULL || b == 0)
 	return (NULL);
