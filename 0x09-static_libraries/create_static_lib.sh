@@ -4,6 +4,6 @@ gcc -Wall -pedantic -Werror -Wextra -c *.c
 
 gcc -c *.c -o *.o
 
-ar -rc liball.a *.o
+ar -rcs liball.a *.o
 
 ranlib liball.a
