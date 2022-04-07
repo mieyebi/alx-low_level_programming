@@ -52,20 +52,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		*(p + c) = *(s1 + c);
 	}
-	while (s2 != 0)
+	for (d = 0 && d < n; s2 != 0 && *(s2 + n) != '\0'; d++)
 	{
-		if (n < b && s2[n] != '\0' && d < n)
-		{
-			*(p + c) = *(s2 + d);
-			c++;
-			d++;
-		}
-		else if (n > b && (d < b && *(s2 + b) != '\0'))
-		{
-			*(p + c) = *(s2 + d);
-			c++;
-			d++;
-		}
+		*(p + c) = *(s2 + d);
+		d++;
 	}
 	*(p + c) = '\0';
 	return (p);
