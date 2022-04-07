@@ -48,26 +48,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 		}
 	}
-	while (s1 != 0 && s1[a] != '\0')
+	for (c = 0 && c < a; s1 != 0 && *(s1 + a) != '\0'; c++)
 	{
-		p[c] = s1[c];
-		c++;
+		*(p + c) = *(s1 + c);
 	}
 	while (s2 != 0)
 	{
-		if (n < b && (d < n && s2[n] != '\0'))
+		if (n < b && s2[n] != '\0' && d < n)
 		{
-			p[c] = s2[d];
+			*(p + c) = *(s2 + d);
 			c++;
 			d++;
 		}
-		else if (n > b && (d < b && s2[b] != '\0'))
+		else if (n > b && (d < b && *(s2 + b) != '\0'))
 		{
-			p[c] = s2[d];
+			*(p + c) = *(s2 + d);
 			c++;
 			d++;
 		}
 	}
-	p[c] = '\0';
-return (p);
+	*(p + c) = '\0';
+	return (p);
 }
