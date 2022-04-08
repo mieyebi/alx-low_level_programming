@@ -52,12 +52,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	*(p + c) = '\0';
 	return (p);
 }
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
