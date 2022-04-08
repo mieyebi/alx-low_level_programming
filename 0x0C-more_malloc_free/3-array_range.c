@@ -24,11 +24,11 @@ int *array_range(int min, int max)
 		return (NULL);
 	while (a >= min && a <= max)
 		a++;
-	p = malloc(a * sizeof(int));
+	p = malloc((a + 1) * sizeof(int));
 
 	if (p == 0)
 		return (NULL);
-	while (b <= a && min <= max)
+	while (b <= (a + 1) && min <= max)
 	{
 		p[b] = min;
 		b++;
