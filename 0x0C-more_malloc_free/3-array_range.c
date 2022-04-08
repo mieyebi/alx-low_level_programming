@@ -26,11 +26,13 @@ int *array_range(int min, int max)
 		a++;
 	p = malloc(a * sizeof(int));
 
-	if (p == 0)
+	if (!p)
 		return (NULL);
 	while (b < a && min < max)
 	{
-		p[b++] = min++;
+		p[b] = min;
+		b++;
+		min++;
 	}
 	return (p);
 }
