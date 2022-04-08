@@ -22,9 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	a = b = c = d = 0;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (s2 == 0)
+	if (s2 == NULL)
 		s2 = "";
 
 	while (s1[a] != '\0')
@@ -33,30 +33,31 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		b++;
 
 	if (n > b)
-	{
-		p = malloc(sizeof(char) * (b + (a + 1)));
-		if (p == 0)
-		{
-			return (NULL);
-		}
-	}
-	else
-	{
-		p = malloc(sizeof(char) * ((a + 1) + n));
-		if (p == 0)
-		{
-			return (NULL);
-		}
-	}
-	for (c = 0 && c < a; s1 != 0 && *(s1 + a) != '\0'; c++)
+		n = b;
+	p = malloc(sizeof(char) * (n + (a + 1)));
+
+	if (p == 0)
+		return (NULL);
+
+
+	for (c = 0; c < a; c++)
 	{
 		*(p + c) = *(s1 + c);
 	}
-	for (d = 0 && d < n; s2 != 0 && *(s2 + n) != '\0'; d++)
+	for (d = 0; d < n; d++)
 	{
 		*(p + c) = *(s2 + d);
-		d++;
+		c++;
 	}
 	*(p + c) = '\0';
 	return (p);
+}
+int main(void)
+{
+    char *concat;
+
+    concat = string_nconcat("Best ", "School !!!", 6);
+    printf("%s\n", concat);
+    free(concat);
+    return (0);
 }
