@@ -10,10 +10,12 @@
 *
 * @size: an unsigned integer
 *
+* Return: cal or NULL
+*
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *cal;
+	void *cal;
 
 	unsigned int a;
 
@@ -27,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (a = 0; a < nmemb; a++)
 	{
-		cal[a] = 0;
+		(unsigned int *)cal[a] = 0;
 	}
 	return (cal);
 }
