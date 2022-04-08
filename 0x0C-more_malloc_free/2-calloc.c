@@ -23,9 +23,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	cal = malloc(sizeof(unsigned int) * size);
 
 	if (cal == 0)
+	{
 		return (NULL);
-
-	for (a = 0; a < size; a++)
+		free(cal);
+	}
+	for (a = 0; a < nmemb; a++)
 	{
 		cal[a] = '0';
 	}
