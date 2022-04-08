@@ -15,21 +15,21 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *cal;
+	unsigned int *cal;
 
 	unsigned int a;
 
-	cal = malloc(size * nmemb);
-
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+	cal = malloc(size * nmemb);
+
 	if (cal == 0)
 	{
 		return (NULL);
 	}
 	for (a = 0; a < nmemb; a++)
 	{
-		(unsigned int *)cal[a] = 0;
+		cal[a] = 0;
 	}
 	return (cal);
 }
