@@ -10,16 +10,26 @@ int main(void)
 {
 	int a, b;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = '0'; a <= (990 / 10); a++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		for (b = '0'; b <= (990 / 10); b++)
 		{
-			if (a == '9' && b == '9')
+			if (a >= '0' && a <= '9')
 			{
-				putchar(a);
+				putchar('0');
+				putchar (a);
+			}
+			if (b >= '0' && b <= '9')
+			{
+				putchar('0');
 				putchar(b);
 			}
-			else
+			putchar(a);
+			putchar(' ');
+			putchar(b);
+			putchar(',');
+		}
+			/*else
 			{
 				putchar(a);
 				putchar(b);
@@ -28,6 +38,7 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	putchar('\n');*/
+	}
 	return (0);
 }
