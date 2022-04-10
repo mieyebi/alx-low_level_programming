@@ -8,37 +8,32 @@
 
 int main(void)
 {
-	int a, b;
+	int a, b, c, d;
 
-	for (a = '0'; a <= (990 / 10); a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (b = '0'; b <= (990 / 10); b++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			if (a >= '0' && a <= '9')
+			for (c = '0'; c <= '9'; c++)
 			{
-				putchar('0');
-				putchar (a);
-			}
-			if (b >= '0' && b <= '9')
-			{
-				putchar('0');
-				putchar(b);
-			}
-			putchar(a);
-			putchar(' ');
-			putchar(b);
-			putchar(',');
-		}
-			/*else
-			{
-				putchar(a);
-				putchar(b);
-				putchar(',');
-				putchar(' ');
+				for (d = '0'; d <= '9'; d++)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
+					if ((a != '9' && b != '9') && (c != '9' && d != '9'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					else
+						break;
+				}
 			}
 		}
 	}
-	putchar('\n');*/
-	}
+	putchar('\n');
 	return (0);
 }
