@@ -22,9 +22,10 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	while (a >= min && a <= max)
-		a++;
-	p = malloc(a * sizeof(int));
+	/*while (a >= min && a <= max)
+		a++;*/
+	a = max - min;
+	p = malloc((a + 1) * sizeof(int));
 
 	if (p == 0)
 		return (NULL);
