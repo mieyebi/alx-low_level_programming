@@ -44,6 +44,21 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 				}
+
+				if (b == n && c > 9 && c < 1000)
+                                {
+					_putchar((c / 100) + '0');
+					_putchar((c / 10) % 10 + '0');
+					_putchar(c % 10 + '0');
+				}
+				else if (b != n && c > 9 && c < 1000)
+				{
+					_putchar((c / 100) + '0');
+					_putchar((c / 10) % 10 + '0');
+					_putchar(c % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 		}
