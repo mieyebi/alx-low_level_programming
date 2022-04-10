@@ -21,7 +21,7 @@ void print_times_table(int n)
 				c = a * b;
 				if ((b == n) && (c >= 0 && c <= 9))
 				{
-					_putchar(c % 0 + '0');
+					_putchar(c % 10 + '0');
 				}
 				else if ((b < n) && (c >= 0 && c <= 9))
 				{
