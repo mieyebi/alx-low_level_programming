@@ -19,22 +19,22 @@ void print_times_table(int n)
 			for (b = 0; b <= n; b++)
 			{
 				c = a * b;
-				if ((b == n) && (c >= '0' && c <= '9'))
+				if ((b == n) && (c >= 0 && c <= 9))
 				{
 					_putchar(c);
 				}
-				else if ((b < n) && (c >= '0' && c <= '9'))
+				else if ((b < n) && (c >= 0 && c <= 9))
 				{
 					_putchar(c);
 					_putchar(',');
 					_putchar(' ');
 				}
-				if (b == n && c > '9')
+				if (b == n && c > 9)
 				{
 					_putchar(c / 10);
 					_putchar(c % 10);
 				}
-				else if (b != n && c > '9')
+				else if (b != n && c > 9)
 				{
 					_putchar(c / 10);
 					_putchar(c % 10);
@@ -42,6 +42,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 			}
+			_putchar('\n');
 		}
 	}
 }
