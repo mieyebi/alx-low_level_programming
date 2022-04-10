@@ -14,7 +14,7 @@
 */
 int *array_range(int min, int max)
 {
-	int *p, a, b;
+	int *p;, a, b;
 
 	a = 0;
 
@@ -28,7 +28,7 @@ int *array_range(int min, int max)
 
 	if (p == 0)
 		return (NULL);
-	while (b < a && min <= max)
+	while (min <= max)
 	{
 		p[b] = min;
 		b++;
