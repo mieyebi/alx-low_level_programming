@@ -25,8 +25,9 @@ void print_times_table(int n)
 				}
 				else if ((b < n) && (c >= 0 && c <= 9))
 				{
-					_putchar(c);
+					_putchar(c % 10);
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 				}
 				if (b == n && c > 9)
