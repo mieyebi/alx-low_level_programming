@@ -21,14 +21,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	else
-		cal = malloc(size * nmemb);
+
+	cal = malloc(size * nmemb);
 
 	if (cal == 0)
 	{
 		return (NULL);
 	}
-	for (a = 0; a < nmemb; a++)
+	for (a = 0; a < (nmemb * size); a++)
 	{
 		cal[a] = 0;
 	}
