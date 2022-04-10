@@ -15,12 +15,12 @@ void *malloc_checked(unsigned int b)
 {
 	unsigned int *c;
 
-	c = (unsigned int *)malloc(sizeof(*c) * b);
+	c = malloc(sizeof(*c) * b);
 
 	if (c == 0)
 	{
 		free(c);
 		exit(98);
 	}
-	return (0);
+	return (c);
 }
