@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 #include <stddef.h>
 #include <stdlib.h>
 
@@ -15,7 +16,7 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *cal;
+	char *cal;
 
 	unsigned int a;
 
