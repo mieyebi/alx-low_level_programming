@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* *array_range - crestes an array of integers
+* *array_range - creates an array of integers
 *
 * @min: an integer
 *
