@@ -1,3 +1,3 @@
 #ifndef PI
-#define PI 22/7.00
+#define PI 3.14159265359
 #endif
