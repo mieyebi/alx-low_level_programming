@@ -6,7 +6,6 @@
 *
 * Return: 0
 */
-#define __FILE__
 
 int main(void)
 {
