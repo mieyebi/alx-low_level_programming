@@ -18,6 +18,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int a;
 
 	va_start(num, n);
+	if (n == 0)
+		return;
 	for (a = 0; a < n; a++)
 	{
 		if (separator != 0)
