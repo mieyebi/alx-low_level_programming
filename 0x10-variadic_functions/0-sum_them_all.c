@@ -7,6 +7,8 @@
 *
 * @n: argument count
 *
+* Return: sum or 0
+*
 */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -19,10 +21,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	for (a = 0; a < n; a++)
+	for (a = 0; a < n; a = va_arg(ap, unsigned int))
 	{
 		sum += va_arg(ap, unsigned int);
 	}
-	va_end (ap);
+	va_end(ap);
 	return (sum);
 }
