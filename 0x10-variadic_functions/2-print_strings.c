@@ -24,20 +24,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		b = va_arg(str, char *);
 
+		printf("%s", b);
+
+		if (b == NULL)
+			printf("(nil)");
+
 		if (separator != 0 && a != n - 1)
-		{
-			printf("%s%s", b, separator);
-			if (b == NULL)
-				printf("(nil)");
-		}
-		else
-			printf("%s", b);
-		if (separator != 0 && a == n - 1)
-		{
-			printf("%s", b);
-			if (b == NULL)
-				printf("(nil)");
-		}
+			printf("%s", separator);
+
 		if (n == 0)
 			return;
 	}
