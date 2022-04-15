@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
-* array-iterator - executes a function given as a parameter on array elements
+* array_iterator - executes a function given as a parameter on array elements
 *
 * @array: array
 *
@@ -13,7 +13,7 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int a;
+	long long int a;
 
 	if (size == 0 || action == 0 || array == 0)
 		return;
