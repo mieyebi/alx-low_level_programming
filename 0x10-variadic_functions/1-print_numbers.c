@@ -30,7 +30,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (n == 0)
 			printf("%s", separator);
 		if (n == 0 && separator == 0)
-			return;
+			break;
 	}
 	va_end(num);
 	putchar('\n');
