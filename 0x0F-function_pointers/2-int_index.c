@@ -31,7 +31,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		else
 			return (b);
 	}
-	if (cmp(array[a] != 98))
+	if (cmp(array[a] != 1))
 	return (-1);
 return (-1);
 }
