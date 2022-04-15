@@ -32,6 +32,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 			printf("%s", b);
+		if (separator != 0 && a = n - 1)
+		{
+			printf("%s", b);
+			if (b == NULL)
+				printf("(nil)");
+		}
 		if (n == 0)
 			return;
 	}
