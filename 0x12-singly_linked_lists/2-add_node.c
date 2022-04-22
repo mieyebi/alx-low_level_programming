@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
-* *add_node_end - adds a new node at the end of a list
+* *add_node - adds a new node at the end of a list
 *
 * @head: the first node
 *
@@ -22,9 +22,12 @@ list_t *add_node(list_t **head, const char *str)
 	if (n_node == 0)
 		return (NULL);
 
-	n_node->str = strdup(str);
-	n_node->len = strlen(str);
-	n_node->next = *head;
-	*head = n_node;
+	else
+	{
+		n_node->str = strdup(str);
+		n_node->len = strlen(str);
+		n_node->next = *head;
+		*head = n_node;
+	}
 	return (n_node);
 }
