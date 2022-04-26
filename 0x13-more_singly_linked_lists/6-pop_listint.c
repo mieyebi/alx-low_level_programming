@@ -18,6 +18,7 @@ int pop_listint(listint_t **head)
 
 	temp = *head;
 
+	a = temp->n;
 
 	if (temp != NULL)
 	{
