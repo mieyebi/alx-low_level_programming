@@ -12,7 +12,7 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *temp, *nxt;
 
 	int a;
 
@@ -20,8 +20,9 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	temp = *head;
-	*head = temp->next;
-	free(*head);
+	nxt = temp->next;
+	free(temp);
+	*head = nxt;
 
 	a = (*head)->n;
 	return (a);
