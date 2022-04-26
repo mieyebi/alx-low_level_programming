@@ -20,9 +20,9 @@ int pop_listint(listint_t **head)
 
 	if (temp != NULL)
 	{
-		*head = head->next;
-		free(head);
-		a = (*head)->n;
+		*head = temp->next;
+		free(temp);
 	}
+	a = (*head)->n;
 	return (a);
 }
