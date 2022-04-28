@@ -33,7 +33,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-			sum += ((b[a] - '0') * mul2);
+			sum += (b[a] * mul2);
 		}
 		a--;
 		mul2 = (mul2 * 2);
