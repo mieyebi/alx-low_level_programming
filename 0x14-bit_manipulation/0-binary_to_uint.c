@@ -20,20 +20,18 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	a = strlen(b);
-	/*else
+	else
 	while (b[a] != '\0')
-		a++;*/
+		a++;
 
 	while (a >= 0)
 	{
-		if (b[a] > '1' || b[a] < '0')
+		if (b[a] > 1 || b[a] < 0)
 		{
 			break;
 			return (0);
 		}
 		else
-		if (b[a] == '0' || b[a] == '1')
 		{
 			sum += (b[a] * mul2);
 		}
