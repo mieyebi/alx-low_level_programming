@@ -31,11 +31,12 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 		else
+		if (b[a] == '0' || b[a] == '1')
 		{
-			sum += b[a] * mul2;
+			sum += (b[a] * mul2);
 		}
 		a--;
-		mul2 = mul2 * 2;
+		mul2 = (mul2 * 2);
 	}
 	return (sum);
 }
