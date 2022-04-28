@@ -26,14 +26,14 @@ unsigned int binary_to_uint(const char *b)
 
 	while (a >= 0)
 	{
-		if (b[a] > 1 || b[a] < 0)
+		if (b[a] > '1' || b[a] < '0')
 		{
 			break;
 			return (0);
 		}
 		else
 		{
-			sum += (b[a] * mul2);
+			sum += ((b[a] - '0') * mul2);
 		}
 		a--;
 		mul2 = (mul2 * 2);
