@@ -10,19 +10,15 @@
 
 void print_binary(unsigned long int n)
 {
-	int a;
 
-	unsigned long int b;
-
-	a = sizeof(n);
-
-	for (; a >= 0; a--)
+	if (n > 0)
 	{
-		b = n >> a;
+		print_binary(n >> 1);
 
-		if (b & 1)
+		if (n & 1)
 			_putchar('1');
 		else
 			_putchar('0');
 	}
+
 }
