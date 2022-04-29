@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* flip_bits - flip bits 
+* flip_bits - flip bits
 *
 * @n: unsigned long int
 *
