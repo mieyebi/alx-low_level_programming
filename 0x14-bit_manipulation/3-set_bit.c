@@ -4,11 +4,11 @@
 /**
 * set_bit - sets that value of a bit
 *
-* @n: string of characters
+* @n: pointer to int
 *
 * @index: index
 *
-* Return 1 or -1
+* Return: 1 or -1
 *
 */
 int set_bit(unsigned long int *n, unsigned int index)
