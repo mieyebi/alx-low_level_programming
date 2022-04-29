@@ -1,4 +1,3 @@
-
 #include "main.h"
 #include <stdio.h>
 
@@ -14,15 +13,15 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int a;
-	int b;
 
-	if (n == 0)
+	if (index >= 32)
 		return (-1);
+	if (n == 0 && index == 0)
+		return (0);
 
 	for (a = 0; a < index; a++)
 	{
-		b = n >> 1;
+		n = n >> 1;
 	}
-	return(b & (1 << index));
+	return(n & 1);
 }
-
