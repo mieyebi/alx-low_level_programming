@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
 * print_binary - prints binary representation of a number
@@ -22,8 +21,8 @@ void print_binary(unsigned long int n)
 		b = n >> a;
 
 		if (b & 1)
-			putchar('1');
+			_putchar('1');
 		else
-			putchar('0');
+			_putchar('0');
 	}
 }
