@@ -7,20 +7,33 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+/**
+* read_textfile - reads a test file
+*
+* @filename: name of file to be read
+*
+* @letters: number of letters to be read or printed
+*
+* Return: 0 or number of letters it can print
+*/
+
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file;
 	ssize_t x, y;
-	char *buf = NULL;
+	char *buf;
 
 
 	if (filename == NULL)
 		return (0);
 
-	 file = open(filename, O_RDONLY);
+	file = open(filename, O_RDONLY);
 
-	 if (file == -1)
-		 return (0);
+	if (file == -1)
+		return (0);
+
+	buf = malloc(sizeof(letters));
 
 	x = read(file, buf, letters);
 	y = write(STDOUT_FILENO, buf, x);
