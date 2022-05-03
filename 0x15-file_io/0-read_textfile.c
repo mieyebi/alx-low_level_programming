@@ -21,14 +21,12 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file;
-	ssize_t x, y;
 	char *buf;
-
 
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, O_RDONLY);
+	file = open(filename, O_RDWR);
 
 	if (file == -1)
 		return (0);
@@ -38,11 +36,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buf == NULL)
 		return (0);
 
-	x = read(file, buf, letters);
-	y = write(STDOUT_FILENO, buf, x);
+	read(file, buf, letters);
+	write(file, buf, letters);
 
 	close(file);
-	free (buf);
 
-	return (y);
+	free(buf);
+
+	return (letters);
 }
