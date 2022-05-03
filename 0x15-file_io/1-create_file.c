@@ -12,7 +12,7 @@
 *
 * @filename: name of file to be created
 *
-* @text_cotent: null terminated string to write to the file
+* @text_content: null terminated string to write to the file
 *
 * Return: 1 or -1
 */
