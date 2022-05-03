@@ -20,19 +20,28 @@
 int create_file(const char *filename, char *text_content)
 {
 
-	int fd, len;
+	int fd, len, wr;
 
 	len = 0;
 
 	while (*text_content != '\0')
 		len++;
 
-	fd = open(filename, O_CREAT, 0600);
-
-	if (fd == 0)
+	if (filename == NULL)
 		return (-1);
 
-	write(fd, text_content, len);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (fd == -1)
+		return (-1);
+
+	if (text_content == NULL)
+		text_content = "";
+
+	wr = write(fd, text_content, len);
+
+	if (wr == -1)
+		return (-1);
 
 	close(fd);
 
