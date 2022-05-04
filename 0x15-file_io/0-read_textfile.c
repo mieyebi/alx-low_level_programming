@@ -6,6 +6,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
 * read_textfile - reads a test file
@@ -20,7 +21,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file;
+	int file, var;
 	char *buf;
 
 	if (filename == NULL)
@@ -31,17 +32,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (file == -1)
 		return (0);
 
-	buf = malloc(sizeof(letters));
+	buf = malloc(letters);
 
 	if (buf == NULL)
 		return (0);
 
 	read(file, buf, letters);
-	write(1, buf, letters);
+	var = write(1, buf, strlen(buf));
 
 	close(file);
 
 	free(buf);
 
-	return (letters);
+	return (var);
 }
