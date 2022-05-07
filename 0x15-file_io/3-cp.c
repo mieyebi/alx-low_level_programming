@@ -18,7 +18,7 @@
 int main(int argc, char *argv[])
 {
 
-	int cl, rd, file_to, file_from;
+	int cl, wr, rd, file_to, file_from;
 	char *buf;
 
 	if (argc != 3)
