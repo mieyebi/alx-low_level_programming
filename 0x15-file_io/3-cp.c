@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	}
 
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	wr = write(file_to, buf, 1024);
+	wr = write(file_to, buf, strlen(buf));
 
 	if (file_to == -1 || wr == -1)
 	{
