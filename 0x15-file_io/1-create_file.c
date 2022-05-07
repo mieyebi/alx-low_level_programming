@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -22,15 +23,12 @@ int create_file(const char *filename, char *text_content)
 
 	int fd, len, wr;
 
-	len = 0;
-
-	while (*text_content != '\0')
-		len++;
+	len = strlen(text_content);
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_RDONLY | O_TRUNC , 0600);
+	fd = open(filename, O_CREAT | O_WRONLY | O_RDONLY | O_TRUNC, 0600);
 
 		if (fd == -1)
 			return (-1);
