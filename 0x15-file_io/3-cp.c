@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	buf = malloc(1024);
-	rd = 1024;
-	while (rd == 1024)
+
+	while (1)
 	{
 		rd = read(file_from, buf, 1024);
 		if (!file_from || rd == -1)
