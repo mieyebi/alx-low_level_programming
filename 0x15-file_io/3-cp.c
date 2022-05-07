@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 
 	buf = malloc(1024);
 
+	rd = 1024;
 	while (1)
 	{
 		rd = read(file_from, buf, 1024);
@@ -39,12 +40,14 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-		wr = write(file_to, buf, strlen(buf));
+		wr = write(file_to, buf, rd);
 		if (file_to == -1 || wr == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
+		if (rd != 1024)
+			break;
 	}
 	free(buf);
 	cl = close(file_to);
