@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDOUT_FILENO, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDOUT_FILENO, "%s\n", argv[0]);
 		exit(97);
 	}
 
 	buf = malloc(1024);
 
-	file_from = open(argv[1], O_RDWR);
+	file_from = open(argv[1], O_RDONLY);
 
 	rd = read(file_from, buf, 1024);
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	file_to = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0664);
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	wr = write(file_to, buf, 1024);
 
 	if (file_to == -1 || wr == -1)
