@@ -17,6 +17,7 @@
 
 int main(int argc, char *argv[])
 {
+
 	int cl, wr, rd, file_to, file_from;
 	char *buf;
 
@@ -29,23 +30,25 @@ int main(int argc, char *argv[])
 	buf = malloc(1024);
 
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
-	while (rd == 1024)
+	rd = read(file_from, buf, 1024);
+
+
+	if (!file_from || rd == -1)
 	{
-		rd = read(file_from, buf, 1024);
-		if (!file_from || rd == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
-		wr = write(file_to, buf, strlen(buf));
-		if (file_to == -1 || wr == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
-		}
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
+
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	wr = write(file_to, buf, strlen(buf));
+
+	if (file_to == -1 || wr == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
+
 	free(buf);
 	cl = close(file_to);
 	if (cl == -1)
