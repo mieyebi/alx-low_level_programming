@@ -8,7 +8,6 @@
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistint_t *nnode;
 	unsigned int a = 0;
 
 	if (!head)
@@ -19,8 +18,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (head->next != NULL && a < index)
 	{
-		nnode = head->next;
+		head = head->next;
 		a++;
 	}
-	return (nnode);
+	return (head);
 }
