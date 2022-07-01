@@ -7,13 +7,12 @@
 * @value: value associated with the key
 * Return: 1 or 0
 */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned int i;
 	hash_node_t *hash, *node = NULL;
-	node = malloc(sizeof(hash_node_t));
 
+	node = malloc(sizeof(hash_node_t));
 	if (node == NULL || ht == NULL)
 		return (0);
 	if (strcmp(key, "") == 0 || key == NULL)
@@ -21,13 +20,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->key = strdup(key);
 	node->value = strdup(value);
 	i = key_index((unsigned char *)key, ht->size);
-
 	if (ht->array[i] != NULL)
 	{
 		hash = ht->array[i];
 		while (hash != NULL)
 		{
-			if(strcmp(hash->key, node->key) == 0)
+			if (strcmp(hash->key, node->key) == 0)
 				break;
 			hash = hash->next;
 		}
