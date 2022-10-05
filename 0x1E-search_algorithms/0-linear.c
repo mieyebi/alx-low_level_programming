@@ -21,7 +21,7 @@ int linear_search(int *array, size_t size, int value)
 			break;
 		}
 	}
-	if ((a == (size - 1)) && (array[a] != value))
+	if (array[a] != value)
 	{
 		return(-1);
 	}
