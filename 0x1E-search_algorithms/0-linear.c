@@ -1,28 +1,22 @@
-#include <stdio.h>
 #include "search_algos.h"
-
-
 /**
-* linear_search - a function that searches using the linear search algorithm
-* @array: pointer to the first element
-* @size: size of the array
-* @value: value to be searched
-* Return: index if true else -1
-*/
-
+ * linear_search - search element in unsorted array
+ * @array: array to be searched from
+ * @size: size of the array
+ * @value: value to be searched
+ * Return: index if found else -1
+ */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t a = 0;
+	size_t i = 0;
 
 	if (array == NULL)
 		return (-1);
-	for (a = 0; a < size; a++)
+	for (i = 0; i < size; i++)
 	{
-		printf("value checked array[%ld] = [%d]\n", a, array[a]);
-		if (array[a] == value)
-		{
-			return (a);
-		}
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+			return (i);
 	}
 	return (-1);
 }
